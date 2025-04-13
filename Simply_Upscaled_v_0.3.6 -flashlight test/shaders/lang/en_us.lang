@@ -1,0 +1,115 @@
+option.TEXTURE_FILTERING_CPF= Texture Upscaling / Filtering
+option.TEXTURE_FILTERING_CPF.comment = Filter Textures so they aren't pixelated when close up, performance may vary by mode, ALPHA ones are debug use or may not work well . 0 -none, 1 -bilinear, 2 -bilinear with adaptive contrast, 3-crisp v1. 4 -crisp/blended ALPHA, 5-crisp v2 (fast), 6-rounded crisp ALPHA, 7-round blend ALPHA
+
+option.TEXTURE_FILTERING_DISTANCE_CPF= Upscaling Distance
+option.TEXTURE_FILTERING_DISTANCE_CPF.comment = How far out to use this effect . very low is fine for high res packs
+
+option.UPSCALE_RESOLUTION_CPF= Upscaling Multiplier
+option.UPSCALE_RESOLUTION_CPF.comment = Multplier for Upscaling and Texture filtering . 1 is infinite . these all cost the same, it's just visual preference
+
+option.TEXTURE_BLEND_SOFTNESS_CPF= Upscaling Softness
+option.TEXTURE_BLEND_SOFTNESS_CPF.comment = 1 is Softer Texture Blending . lOWER will sharpen Adaptive Contrast to maintain high contrast areas even more, but in doing so limits softer blending. Too low ruins crisp Upscalers.
+
+option.TEXTURE_FILTER_FADE_CPF= Upscaling Fade-in
+option.TEXTURE_FILTER_FADE_CPF.comment = fade in for texture filtering . may not work with every style
+
+option.FOG.comment = 0 -Off. 1 -On
+
+option.CUSTOM_TORCH_COLOR=Custom Torch Colors
+option.CUSTOM_TORCH_COLOR.comment = 0 -Vanilla. 1 -Custom: Use Torch_Hi RGB. 2 -Dynamic: Fade from Torch_hi_RGB to Torch_Lo_RGB
+
+option.SHADOWS.comment=0 -Off. 1 -On
+option.DIRECTIONAL_LIGHTING.comment = 0 -Off when not using Shadows, Vanilla style lighting Only. 1 -On (it's always on with Shadows On)
+
+option.COLORED_SHADOWS.comment= 0: Stained glass will cast ordinary shadows. 1: Stained glass will cast colored shadows. 2: Stained glass will not cast any shadows. 
+
+option.DONT_BLOW_OUT_WHITES.comment = 0- Off. 1 -Limits the brightest things on screen a little. Will also make things less Saturated and Colorful, so you can also try turning down Sky_Light or Sun_Brightness.
+
+option.BACK_LIT_GRASS.comment = Let sunlight penetrate through grass to the back.
+
+option.NON_DIRECTIONAL_AMBIENT_SKY_LIGHT=Non-Directional Sky Light Amount
+option.NON_DIRECTIONAL_AMBIENT_SKY_LIGHT.comment= (PBR Only) More is Softer looking and brighter in Shadows. Lower is harder looking skylight with obvious 3D textures in shadow because of sky light coming from above.
+
+option.PBR=PBR Mode
+
+option.METAL_SMOOTHER=Metal Smoother
+option.METAL_SMOOTHER.comment=This makes metals smoother for crisper reflections
+
+option.SUNSET= Sunset Type
+option.SUNSET.comment = 0 -Instant flip. 1 -Fade to black. 2 -Colored Fade.
+
+option.CUSTOM_SUN_COLOR=Use Custom Sun & Moon Colors
+option.CUSTOM_SUN_COLOR.comment = 0 -Off. 1 -On
+
+option.SKY_COLOR_ALTERNATE.comment=If you use this it will look very blue unless you use a custom sun color and increase sun brightness.
+
+option.SHADOWS=Shadow Style
+option.SHADOWS.comment = Samples may affect fps. 0 -None: 0 Samples. 1 -Basic: 1 Sample. 2 -blurry edges: 4 Samples. 3 -Crisp: 4 Samples. 4 -Soft Edged Bilinear: 8 Samples.  5 -Blocky Prenumbra (Choose Samples in 8's). 6 -Smooth Prenumbra (Choose Samples). 7 -Smooth Prenumbra buggy v2: (Choose Samples in 8's)
+
+option.BORDER_SAMPLES.comment = More samples is a thicker border but might cost fps.
+
+option.PRENUMBRA_INFO=Prenumbra Info (hover mouse)
+option.PRENUMBRA_INFO.comment = For Shadow Styles 5+, these extra Options May Apply. 
+
+option.SSS=Soft Lighting
+option.SSS.comment= 0 -Off. 1 -Just on Plants and Sub Surface Scattering. 2 -On Everything.
+
+
+ option.TORCH_HORIZONTAL_OFFSET.comment=higher is a more dramatic stereo offset of light position from the center of the screen. Lower will be more centered and less Obvious. Lower is good for 3rd Person, with Z offset turned up.
+ option.TORCH_LIGHT_3D = 3D Torch Light
+ option.TORCH_LIGHT_3D.comment=0 -FLAT hand held light based only on distance. 1 -DRAMATIC, use 3d data. 2 -ACCURATE & Adjustable, use 3D data
+ option.TORCH_V_OFFSET=Torch Verticle Offset
+ option.TORCH_V_OFFSET.comment = down from center in world block units
+ option.HAND_HELD_TORCH.comment = 0-Off. 1-On
+option.TORCH_Z_OFFSET.comment = Changing this will move the torch light source Away from the camera, to work with 3rd person.
+
+option.GRASS_SHADOWS=Grass casts Shadows
+
+option.WIDEN_FILTERED_THINGS.comment= this might make swords look better with some Upscaling Options
+option.ENTITY_TEX_FILTER_FIX.comment = fixes holes in dropped items and handheld things being upscaled
+option.UPSCALE_HAND_HELD.comment= This is kind of buggy 
+
+option.DH_SHADOWS=DH Shadows (Experimental, low res)
+option.DH_SHADOWS.comment = EXPERIMENTAL!. Will hit fps. Disables shadow distortion, so needs High Shadow map Resolution.
+option.BORDERS_IN_DH.comment = Draw Cartoon Borders in Distant Horizons chunks. May cost fps
+option.EXPONENTIAL_FOG_.comment= 0 -Off. 1 -Recommended (Off, but On with Distant Horizons). 2 -On
+
+option.LONG_SUNSET_SHADOWS=Long DH Sunsest Shadows 
+option.LONG_SUNSET_SHADOWS.comment = Extends Shadowmap depth for longer shadows and less light leaking at sunrise and sunset. isn't perfect. May cost significant fps
+
+option.BORDERS_SENSITIVITY= Borders Sensitivity
+option.BORDERS_SENSITIVITY.comment = Lower is more outlines, Higher needs higher distance between things before drawing outlines.
+
+option.BORDER_SAMPLES=Border Samples / thickness
+
+option.DH_FLYING_FIX_CIRCLE = Fix circle when flying
+option.DH_FLYING_FIX_CIRCLE_SPEED =Fix Circle Speed
+option.DH_FLYING_FIX_CIRCLE_ONLY_IN_AIR = Fix circle only when Flying
+option.DH_FLYING_FIX_CIRCLE.comment = Fix the circular hole in the world if flying very fast and upir cpu can't keep up.
+option.DH_FLYING_FIX_CIRCLE_SPEED.comment = Speed you have to travel to have no circle at all. Too low might produce artifacts from dh and regular both rendering in the same space. use debug to tune to your fps, it isn't perfect on one range for all fps ranges.
+option.DH_FLYING_FIX_CIRCLE_ONLY_IN_AIR.comment = Only fix the circle when in the air like flying to minimize graphical weirdness.
+
+option.FIX_COLOR_SPACE.comment = Use Linear color for shading, this shader isn't really made for this.
+
+option.DEBUG_FIX_CIRCLE.comment Shows the flying fix. Black means you are going too slow to start the circle shrinking, Red means you are at the top speed,-DOESN'T WORK IN MENU,-UNPAUSE. You want the circle gone when flying fast, so set lower speed if not gone when red.
+
+option.FORCE_CRISP_SHADOWS.comment = Make any shadow option be crisp, to use its sampling for crisp shadows. Can look really bad, but maybe you'll find a way to use it well.
+option.FORCE_CRISP_SHADOWS=Force Crisp Shadows (not recommended)
+
+option.SHADOW_DISTORT_ENABLED.comment= Don't use this on very low shadow distance. Makes close shadows more HD and far shadows less HD by distorting the shadow map, to make close shadows better, but distorts far shadows.
+option.SHADOW_DISTORT_ENABLED=Shadow Map Distortion
+
+option.SHADOW_BIAS.comment = If you get little dots on the ground with shadows, turn this up.  Too high will make shadows floaty and disconnected.
+
+option.CLOUDS.comment = 0 -Vanilla. 1 -Fancy v1. 2 -Fancy v2
+
+option.shadowDistance = Shadow Render Distance
+option.shadowDistance.comment = FPS cost! Render distance of shadows. If putting very low, disable 'Shadow Map Distortion' or shadows will look broken.
+
+option.FLASH_LIGHT = Flashlight
+option.FLASH_LIGHT.comment = 0 -Off. 1 -Basic. 2 -Depth Effect & Focus Rings
+
+profile.comment= Fancy has Godrays, Soft Shadows, and custom Torch Light. Cartoon is Fancy with Caroon borders. For Potato Shadows on Iris, it runs Shadows at a distance of 20, without distortion, fades them out, and runs Crisp shadow upscaling on a 512 pixel shadowmap.
+ 
+option.INFO_CLICK=Info (hover mouse)
+option.INFO_CLICK.comment=Profiles mostly change Torch colors/quality, godrays, shadows, -you can put them much higher, The only noticeable performace differences should be Shadow Map Resolution and Samples, PBR Mode and Effects like godrays. Use the right PBR Mode. Shader (c) timetravelbeard 2024, please report bugs on discord linked on patreon.com/timetravelbeard. 
